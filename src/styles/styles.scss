@@ -29,14 +29,22 @@ h1 {
     color: #fff;
     left: 20px;
     right: 20px;
-    transform: translateY(300px);
+    transform: translateY(500px);
+    transition: all 0.3s;
 }
+
 .content-box {
     color: #000;
-    transition: all 0.3s;
+    position: relative;
     padding: 40px;
     background: #d6d6d6;
     border: 4px solid #fff;
+    img {
+        max-width: 100px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
 }
 
 body.kv-2017-map-zoom-local #content-wrapper {
@@ -57,7 +65,7 @@ svg#kv-2017-map {
 }
 
 body.kv-2017-map-zoom-regional svg#kv-2017-map, body.kv-2017-map-zoom-local svg#kv-2017-map {
-    transform: scale3d(3, 3, 3) translate3d(-20%, -20%, 0);
+    transform: scale3d(3, 3, 3) translate3d(-16vw, -20vh, 0);
 }
 
 @keyframes initialZoom {
