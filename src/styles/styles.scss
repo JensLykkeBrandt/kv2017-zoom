@@ -33,6 +33,14 @@ h1 {
     transition: all 0.3s;
 }
 
+@media (min-width: 600px) {
+    #content-wrapper {
+        left: auto;
+        max-width: 360px
+    }
+}
+
+
 .content-box {
     color: #000;
     position: relative;
@@ -46,6 +54,7 @@ h1 {
         bottom: 5px;
     }
 }
+
 
 body.kv-2017-map-zoom-local #content-wrapper {
     transform: translateY(0);
